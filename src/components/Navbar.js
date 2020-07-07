@@ -4,7 +4,7 @@ import "../index.css";
 
 export default function Navbar(props) {
   return (
-    <div>
+    <div className="nav">
       <div>
         <ul>
           <li>

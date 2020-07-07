@@ -9,11 +9,17 @@ body {
 
 body {
   text-align: center;
-  background-color: #f9f6e5;
+  background-color: #f8eebc;
 }
 h1,
 h3 {
   color: #45a590;
+}
+.nav {
+  background-color: #45a590;
+  color: white;
+  text-align: center;
+  padding: 4px;
 }
 
 ul {
@@ -24,6 +30,27 @@ ul {
 }
 a {
   text-decoration: none;
-  color: #45a590;
+  color: white;
   text-transform: uppercase;
+}
+
+svg {
+  height: 2em;
+  width: 2em;
+}
+.btn-up svg {
+  fill: #45a590;
+}
+.btn-down svg {
+  fill: red;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8eebc;
+  color: #45a590;
+  text-align: center;
 }
