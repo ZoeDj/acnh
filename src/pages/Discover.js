@@ -17,15 +17,15 @@ class Discover extends Component {
   randomVillager = () => {
     let random = [Math.floor(Math.random() * 390)];
     API.getRandomVillager(random)
-
       .then((res) =>
         this.setState({
           name: Object.values(res.data)[random].name[`name-USen`],
           image: Object.values(res.data)[random].image_uri,
-          birthday: Object.values(res.data)[random].birthday,
+          birthday: Object.values(res.data)[random][`birthday-string`],
           species: Object.values(res.data)[random].species,
           gender: Object.values(res.data)[random].gender,
           personality: Object.values(res.data)[random].personality,
+          catchPhrase: Object.values(res.data)[random][`catch-phrase`],
         })
       )
       .catch((err) => console.log(err));
@@ -42,7 +42,7 @@ class Discover extends Component {
         <h4>Species: {this.state.species}</h4>
         <h4>Birthday: {this.state.birthday}</h4>
         <h4>Personality: {this.state.personality}</h4>
-
+        <h4>Catch Phrase: "{this.state.catchPhrase}"</h4>
         <div>
           <button className="btn-up">
             <FaThumbsUp />
