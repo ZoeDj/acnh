@@ -54,3 +54,11 @@ svg {
   color: #45a590;
   text-align: center;
 }
+
+/* Search */
+.displayCard {
+  display: inline-block;
+  max-height: 100px;
+  padding: 5px;
+  margin: 10px;
+}
