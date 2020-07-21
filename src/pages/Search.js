@@ -3,6 +3,7 @@ import API from "../utils/API";
 
 class Search extends Component {
   state = {
+    isSearchVisible: false,
     searchFemale: "",
     searchMale: "",
     searchAlligator: "",
@@ -45,13 +46,14 @@ class Search extends Component {
   componentDidMount() {
     this.searchVillager();
   }
+
   searchVillager = () => {
     API.getRandomVillager()
       .then((res) =>
         this.setState({
           searchFemale: Object.values(res.data).map(function (cur) {
             return cur.gender === "Female" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="female villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -61,7 +63,7 @@ class Search extends Component {
           }),
           searchMale: Object.values(res.data).map(function (cur) {
             return cur.gender === "Male" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="male villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -424,13 +426,24 @@ class Search extends Component {
       .catch((err) => console.log(err));
   };
 
+  toggleSearch = (className) => {
+    this.setState((prevState) => ({
+      isSearchVisible: !prevState.isSearchVisible,
+    }));
+  };
+
   render() {
+    const { isSearchVisible } = this.state;
     return (
       <div>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button female"
+          onClick={this.toggleSearch}
+        >
           Female
         </button>
-        <button type="button" className="primary-button">
+        <button type="button" className="primary-button male">
           Male
         </button>
         <button type="button" className="primary-button">
@@ -541,8 +554,24 @@ class Search extends Component {
         <button type="button" className="primary-button">
           Wolf
         </button>
-        {/* <h2>Female</h2>
-        <div>{this.state.searchFemale}</div> */}
+
+        <div className={`${isSearchVisible ? "" : "hidden"}`}>
+          <div className="female">
+            <h2>Female</h2>
+            <div>{this.state.searchFemale}</div>
+          </div>
+        </div>
+        {/* <div className={`male search ${isSearchVisible ? "" : "hidden"}`}>
+          <div className="male">
+            <h2>Male</h2>
+            <div>{this.state.searchMale}</div>
+          </div>
+        </div> */}
+
+        {/* <div className="female">
+          <h2>Female</h2>
+          <div>{this.state.searchFemale}</div>
+        </div> */}
         {/* <button>Male</button>
         <h2>Male</h2>
         <div>{this.state.searchMale}</div> */}
