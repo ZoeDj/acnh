@@ -58,7 +58,13 @@ svg {
 /* Search */
 .displayCard {
   display: inline-block;
-  max-height: 100px;
   padding: 5px;
   margin: 10px;
+}
+.displayCard img {
+  border-radius: 10%;
+  max-height: 150px;
+}
+.hidden {
+  display: none;
 }

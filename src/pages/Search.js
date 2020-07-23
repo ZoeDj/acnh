@@ -3,7 +3,6 @@ import API from "../utils/API";
 
 class Search extends Component {
   state = {
-    isSearchVisible: false,
     searchFemale: "",
     searchMale: "",
     searchAlligator: "",
@@ -73,7 +72,7 @@ class Search extends Component {
           }),
           searchAlligator: Object.values(res.data).map(function (cur) {
             return cur.species === "Alligator" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="alligator villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -83,7 +82,7 @@ class Search extends Component {
           }),
           searchAnteater: Object.values(res.data).map(function (cur) {
             return cur.species === "Anteater" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="Anteater villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -93,7 +92,7 @@ class Search extends Component {
           }),
           searchBear: Object.values(res.data).map(function (cur) {
             return cur.species === "Bear" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="bear villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -103,7 +102,7 @@ class Search extends Component {
           }),
           searchBird: Object.values(res.data).map(function (cur) {
             return cur.species === "Bird" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="bird villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -113,7 +112,7 @@ class Search extends Component {
           }),
           searchBull: Object.values(res.data).map(function (cur) {
             return cur.species === "Bull" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="bull villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -123,7 +122,7 @@ class Search extends Component {
           }),
           searchCat: Object.values(res.data).map(function (cur) {
             return cur.species === "Cat" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="cat villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -133,7 +132,7 @@ class Search extends Component {
           }),
           searchChicken: Object.values(res.data).map(function (cur) {
             return cur.species === "Chicken" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="chicken villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -143,7 +142,7 @@ class Search extends Component {
           }),
           searchCow: Object.values(res.data).map(function (cur) {
             return cur.species === "Cow" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="cow villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -153,7 +152,7 @@ class Search extends Component {
           }),
           searchCub: Object.values(res.data).map(function (cur) {
             return cur.species === "Cub" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="cub villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -163,7 +162,7 @@ class Search extends Component {
           }),
           searchDeer: Object.values(res.data).map(function (cur) {
             return cur.species === "Deer" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="deer villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -173,7 +172,7 @@ class Search extends Component {
           }),
           searchDog: Object.values(res.data).map(function (cur) {
             return cur.species === "Dog" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="dog villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -183,7 +182,7 @@ class Search extends Component {
           }),
           searchDuck: Object.values(res.data).map(function (cur) {
             return cur.species === "Duck" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="duck villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -193,7 +192,7 @@ class Search extends Component {
           }),
           searchEagle: Object.values(res.data).map(function (cur) {
             return cur.species === "Eagle" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="eagle villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -203,7 +202,7 @@ class Search extends Component {
           }),
           searchElephant: Object.values(res.data).map(function (cur) {
             return cur.species === "Elephant" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="elephant villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -213,7 +212,7 @@ class Search extends Component {
           }),
           searchFrog: Object.values(res.data).map(function (cur) {
             return cur.species === "Frog" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="frog villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -223,7 +222,7 @@ class Search extends Component {
           }),
           searchGoat: Object.values(res.data).map(function (cur) {
             return cur.species === "Goat" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="goat villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -233,7 +232,7 @@ class Search extends Component {
           }),
           searchGorilla: Object.values(res.data).map(function (cur) {
             return cur.species === "Gorilla" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="gorilla villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -243,7 +242,7 @@ class Search extends Component {
           }),
           searchHamster: Object.values(res.data).map(function (cur) {
             return cur.species === "Hamster" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="hamster villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -253,7 +252,7 @@ class Search extends Component {
           }),
           searchHippo: Object.values(res.data).map(function (cur) {
             return cur.species === "Hippo" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="hippo villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -263,7 +262,7 @@ class Search extends Component {
           }),
           searchHorse: Object.values(res.data).map(function (cur) {
             return cur.species === "Horse" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="horse villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -273,7 +272,7 @@ class Search extends Component {
           }),
           searchKangaroo: Object.values(res.data).map(function (cur) {
             return cur.species === "Kangaroo" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="kangaroo villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -283,7 +282,7 @@ class Search extends Component {
           }),
           searchKoala: Object.values(res.data).map(function (cur) {
             return cur.species === "Koala" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="koala villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -293,7 +292,7 @@ class Search extends Component {
           }),
           searchLion: Object.values(res.data).map(function (cur) {
             return cur.species === "Lion" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="lion villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -303,7 +302,7 @@ class Search extends Component {
           }),
           searchMonkey: Object.values(res.data).map(function (cur) {
             return cur.species === "Monkey" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="monkey villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -313,7 +312,7 @@ class Search extends Component {
           }),
           searchMouse: Object.values(res.data).map(function (cur) {
             return cur.species === "Mouse" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="mouse villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -323,7 +322,7 @@ class Search extends Component {
           }),
           searchOctopus: Object.values(res.data).map(function (cur) {
             return cur.species === "Octopus" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="octopus villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -333,7 +332,7 @@ class Search extends Component {
           }),
           searchOstrich: Object.values(res.data).map(function (cur) {
             return cur.species === "Ostrich" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="ostrich villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -343,7 +342,7 @@ class Search extends Component {
           }),
           searchPenguin: Object.values(res.data).map(function (cur) {
             return cur.species === "Penguin" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="penguin villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -353,7 +352,7 @@ class Search extends Component {
           }),
           searchPig: Object.values(res.data).map(function (cur) {
             return cur.species === "Pig" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="pig villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -363,7 +362,7 @@ class Search extends Component {
           }),
           searchRabbit: Object.values(res.data).map(function (cur) {
             return cur.species === "Rabbit" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="rabbit villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -373,7 +372,7 @@ class Search extends Component {
           }),
           searchRhino: Object.values(res.data).map(function (cur) {
             return cur.species === "Rhino" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="rhino villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -383,7 +382,7 @@ class Search extends Component {
           }),
           searchSheep: Object.values(res.data).map(function (cur) {
             return cur.species === "Sheep" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="sheep villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -393,7 +392,7 @@ class Search extends Component {
           }),
           searchSquirrel: Object.values(res.data).map(function (cur) {
             return cur.species === "Squirrel" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="squirrel villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -403,7 +402,7 @@ class Search extends Component {
           }),
           searchTiger: Object.values(res.data).map(function (cur) {
             return cur.species === "Tiger" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="tiger villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -413,7 +412,7 @@ class Search extends Component {
           }),
           searchWolf: Object.values(res.data).map(function (cur) {
             return cur.species === "Wolf" ? (
-              <div className="displayCard">
+              <div className="displayCard" key={cur.id}>
                 <img src={cur.image_uri} alt="wolf villager"></img>
                 <p>{cur.name[`name-USen`]}</p>
               </div>
@@ -426,189 +425,714 @@ class Search extends Component {
       .catch((err) => console.log(err));
   };
 
-  toggleSearch = (className) => {
+  toggleFemaleSearch = () => {
     this.setState((prevState) => ({
-      isSearchVisible: !prevState.isSearchVisible,
+      isFemaleSearchVisible: !prevState.isFemaleSearchVisible,
+    }));
+  };
+  toggleMaleSearch = () => {
+    this.setState((prevState) => ({
+      isMaleSearchVisible: !prevState.isMaleSearchVisible,
+    }));
+  };
+  toggleAlligatorSearch = () => {
+    this.setState((prevState) => ({
+      isAlligatorSearchVisible: !prevState.isAlligatorSearchVisible,
+    }));
+  };
+  toggleAnteaterSearch = () => {
+    this.setState((prevState) => ({
+      isAnteaterSearchVisible: !prevState.isAnteaterSearchVisible,
+    }));
+  };
+  toggleBearSearch = () => {
+    this.setState((prevState) => ({
+      isBearSearchVisible: !prevState.isBearSearchVisible,
+    }));
+  };
+  toggleBirdSearch = () => {
+    this.setState((prevState) => ({
+      isBirdSearchVisible: !prevState.isBirdSearchVisible,
+    }));
+  };
+  toggleBullSearch = () => {
+    this.setState((prevState) => ({
+      isBullSearchVisible: !prevState.isBullSearchVisible,
+    }));
+  };
+  toggleCatSearch = () => {
+    this.setState((prevState) => ({
+      isCatSearchVisible: !prevState.isCatSearchVisible,
+    }));
+  };
+  toggleChickenSearch = () => {
+    this.setState((prevState) => ({
+      isChickenSearchVisible: !prevState.isChickenSearchVisible,
+    }));
+  };
+  toggleCowSearch = () => {
+    this.setState((prevState) => ({
+      isCowSearchVisible: !prevState.isCowSearchVisible,
+    }));
+  };
+  toggleCubSearch = () => {
+    this.setState((prevState) => ({
+      isCubSearchVisible: !prevState.isCubSearchVisible,
+    }));
+  };
+  toggleDeerSearch = () => {
+    this.setState((prevState) => ({
+      isDeerSearchVisible: !prevState.isDeerSearchVisible,
+    }));
+  };
+  toggleDogSearch = () => {
+    this.setState((prevState) => ({
+      isDogSearchVisible: !prevState.isDogSearchVisible,
+    }));
+  };
+  toggleDuckSearch = () => {
+    this.setState((prevState) => ({
+      isDuckSearchVisible: !prevState.isDuckSearchVisible,
+    }));
+  };
+  toggleEagleSearch = () => {
+    this.setState((prevState) => ({
+      isEagleSearchVisible: !prevState.isEagleSearchVisible,
+    }));
+  };
+  toggleElephantSearch = () => {
+    this.setState((prevState) => ({
+      isElephantSearchVisible: !prevState.isElephantSearchVisible,
+    }));
+  };
+  toggleFrogSearch = () => {
+    this.setState((prevState) => ({
+      isFrogSearchVisible: !prevState.isFrogSearchVisible,
+    }));
+  };
+  toggleGoatSearch = () => {
+    this.setState((prevState) => ({
+      isGoatSearchVisible: !prevState.isGoatSearchVisible,
+    }));
+  };
+  toggleGorillaSearch = () => {
+    this.setState((prevState) => ({
+      isGorillaSearchVisible: !prevState.isGorillaSearchVisible,
+    }));
+  };
+  toggleHamsterSearch = () => {
+    this.setState((prevState) => ({
+      isHamsterSearchVisible: !prevState.isHamsterSearchVisible,
+    }));
+  };
+  toggleHippoSearch = () => {
+    this.setState((prevState) => ({
+      isHippoSearchVisible: !prevState.isHippoSearchVisible,
+    }));
+  };
+  toggleHorseSearch = () => {
+    this.setState((prevState) => ({
+      isHorseSearchVisible: !prevState.isHorseSearchVisible,
+    }));
+  };
+  toggleKangarooSearch = () => {
+    this.setState((prevState) => ({
+      isKangarooSearchVisible: !prevState.isKangarooSearchVisible,
+    }));
+  };
+  toggleKoalaSearch = () => {
+    this.setState((prevState) => ({
+      isKoalaSearchVisible: !prevState.isKoalaSearchVisible,
+    }));
+  };
+  toggleLionSearch = () => {
+    this.setState((prevState) => ({
+      isLionSearchVisible: !prevState.isLionSearchVisible,
+    }));
+  };
+  toggleMonkeySearch = () => {
+    this.setState((prevState) => ({
+      isMonkeySearchVisible: !prevState.isMonkeySearchVisible,
+    }));
+  };
+  toggleMouseSearch = () => {
+    this.setState((prevState) => ({
+      isMouseSearchVisible: !prevState.isMouseSearchVisible,
+    }));
+  };
+  toggleOctopusSearch = () => {
+    this.setState((prevState) => ({
+      isOctopusSearchVisible: !prevState.isOctopusSearchVisible,
+    }));
+  };
+  toggleOstrichSearch = () => {
+    this.setState((prevState) => ({
+      isOstrichSearchVisible: !prevState.isOstrichSearchVisible,
+    }));
+  };
+  togglePenguinSearch = () => {
+    this.setState((prevState) => ({
+      isPenguinSearchVisible: !prevState.isPenguinSearchVisible,
+    }));
+  };
+  togglePigSearch = () => {
+    this.setState((prevState) => ({
+      isPigSearchVisible: !prevState.isPigSearchVisible,
+    }));
+  };
+  toggleRabbitSearch = () => {
+    this.setState((prevState) => ({
+      isRabbitSearchVisible: !prevState.isRabbitSearchVisible,
+    }));
+  };
+  toggleRhinoSearch = () => {
+    this.setState((prevState) => ({
+      isRhinoSearchVisible: !prevState.isRhinoSearchVisible,
+    }));
+  };
+  toggleSheepSearch = () => {
+    this.setState((prevState) => ({
+      isSheepSearchVisible: !prevState.isSheepSearchVisible,
+    }));
+  };
+  toggleSquirrelSearch = () => {
+    this.setState((prevState) => ({
+      isSquirrelSearchVisible: !prevState.isSquirrelSearchVisible,
+    }));
+  };
+  toggleTigerSearch = () => {
+    this.setState((prevState) => ({
+      isTigerSearchVisible: !prevState.isTigerSearchVisible,
+    }));
+  };
+  toggleWolfSearch = () => {
+    this.setState((prevState) => ({
+      isWolfSearchVisible: !prevState.isWolfSearchVisible,
     }));
   };
 
   render() {
-    const { isSearchVisible } = this.state;
+    const { isFemaleSearchVisible } = this.state;
+    const { isMaleSearchVisible } = this.state;
+    const { isAlligatorSearchVisible } = this.state;
+    const { isAnteaterSearchVisible } = this.state;
+    const { isBearSearchVisible } = this.state;
+    const { isBirdSearchVisible } = this.state;
+    const { isBullSearchVisible } = this.state;
+    const { isCatSearchVisible } = this.state;
+    const { isChickenSearchVisible } = this.state;
+    const { isCowSearchVisible } = this.state;
+    const { isCubSearchVisible } = this.state;
+    const { isDeerSearchVisible } = this.state;
+    const { isDogSearchVisible } = this.state;
+    const { isDuckSearchVisible } = this.state;
+    const { isEagleSearchVisible } = this.state;
+    const { isElephantSearchVisible } = this.state;
+    const { isFrogSearchVisible } = this.state;
+    const { isGoatSearchVisible } = this.state;
+    const { isGorillaSearchVisible } = this.state;
+    const { isHamsterSearchVisible } = this.state;
+    const { isHippoSearchVisible } = this.state;
+    const { isHorseSearchVisible } = this.state;
+    const { isKangarooSearchVisible } = this.state;
+    const { isKoalaSearchVisible } = this.state;
+    const { isLionSearchVisible } = this.state;
+    const { isMonkeySearchVisible } = this.state;
+    const { isMouseSearchVisible } = this.state;
+    const { isOctopusSearchVisible } = this.state;
+    const { isOstrichSearchVisible } = this.state;
+    const { isPenguinSearchVisible } = this.state;
+    const { isPigSearchVisible } = this.state;
+    const { isRabbitSearchVisible } = this.state;
+    const { isRhinoSearchVisible } = this.state;
+    const { isSheepSearchVisible } = this.state;
+    const { isSquirrelSearchVisible } = this.state;
+    const { isTigerSearchVisible } = this.state;
+    const { isWolfSearchVisible } = this.state;
     return (
       <div>
         <button
           type="button"
           className="primary-button female"
-          onClick={this.toggleSearch}
+          onClick={this.toggleFemaleSearch}
         >
           Female
         </button>
-        <button type="button" className="primary-button male">
+        <button
+          type="button"
+          className="primary-button male"
+          onClick={this.toggleMaleSearch}
+        >
           Male
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button alligator"
+          onClick={this.toggleAlligatorSearch}
+        >
           Alligator
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button anteater"
+          onClick={this.toggleAnteaterSearch}
+        >
           Anteater
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleBearSearch}
+        >
           Bear
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleBirdSearch}
+        >
           Bird
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleBullSearch}
+        >
           Bull
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleCatSearch}
+        >
           Cat
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleChickenSearch}
+        >
           Chicken
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleCowSearch}
+        >
           Cow
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleCubSearch}
+        >
           Cub
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleDeerSearch}
+        >
           Deer
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleDogSearch}
+        >
           Dog
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleDuckSearch}
+        >
           Duck
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleEagleSearch}
+        >
           Eagle
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleElephantSearch}
+        >
           Elephant
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleFrogSearch}
+        >
           Frog
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleGoatSearch}
+        >
           Goat
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleGorillaSearch}
+        >
           Gorilla
         </button>
-        <button type="button" className="primary-button">
-          Gorilla
-        </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleHamsterSearch}
+        >
           Hamster
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleHippoSearch}
+        >
           Hippo
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleHorseSearch}
+        >
           Horse
         </button>
-        <button type="button" className="primary-button">
-          Lion
-        </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleKangarooSearch}
+        >
           Kangaroo
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleKoalaSearch}
+        >
           Koala
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleLionSearch}
+        >
+          Lion
+        </button>
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleMonkeySearch}
+        >
           Monkey
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleMouseSearch}
+        >
           Mouse
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleOctopusSearch}
+        >
           Octopus
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleOstrichSearch}
+        >
           Ostrich
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.togglePenguinSearch}
+        >
           Penguin
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.togglePigSearch}
+        >
           Pig
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleRabbitSearch}
+        >
           Rabbit
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleRhinoSearch}
+        >
           Rhino
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleSheepSearch}
+        >
           Sheep
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleSquirrelSearch}
+        >
           Squirrel
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleTigerSearch}
+        >
           Tiger
         </button>
-        <button type="button" className="primary-button">
+        <button
+          type="button"
+          className="primary-button"
+          onClick={this.toggleWolfSearch}
+        >
           Wolf
         </button>
 
-        <div className={`${isSearchVisible ? "" : "hidden"}`}>
+        <div className={`${isFemaleSearchVisible ? "" : "hidden"}`}>
           <div className="female">
             <h2>Female</h2>
             <div>{this.state.searchFemale}</div>
           </div>
         </div>
-        {/* <div className={`male search ${isSearchVisible ? "" : "hidden"}`}>
+        <div className={` ${isMaleSearchVisible ? "" : "hidden"}`}>
           <div className="male">
             <h2>Male</h2>
             <div>{this.state.searchMale}</div>
           </div>
-        </div> */}
-
-        {/* <div className="female">
-          <h2>Female</h2>
-          <div>{this.state.searchFemale}</div>
-        </div> */}
-        {/* <button>Male</button>
-        <h2>Male</h2>
-        <div>{this.state.searchMale}</div> */}
-        {/* <div>{this.state.searchAlligator}</div> */}
-        {/* <div>{this.state.searchAnteater}</div> */}
-        {/* <div>{this.state.searchBear}</div> */}
-        {/* <div>{this.state.searchBird}</div> */}
-        {/* <div>{this.state.searchBull}</div> */}
-        {/* <div>{this.state.searchCat}</div> */}
-        {/* <div>{this.state.searchChicken}</div>
-        <div>{this.state.searchCow}</div>
-        <div>{this.state.searchCub}</div>
-        <div>{this.state.searchDeer}</div>
-        <div>{this.state.searchDog}</div>
-        <div>{this.state.searchDuck}</div>
-        <div>{this.state.searchEagle}</div>
-        <div>{this.state.searchElephant}</div>
-        <div>{this.state.searchFrog}</div>
-        <div>{this.state.searchGoat}</div>
-        <div>{this.state.searchGorilla}</div>
-        <div>{this.state.searchHamster}</div>
-        <div>{this.state.searchHippo}</div>
-        <div>{this.state.searchHorse}</div>
-        <div>{this.state.searchKangaroo}</div>
-        <div>{this.state.searchKoala}</div>
-        <div>{this.state.searchLion}</div>
-        <div>{this.state.searchMonkey}</div>
-        <div>{this.state.searchMouse}</div>
-        <div>{this.state.searchOctopus}</div>
-        <div>{this.state.searchOstrich}</div>
-        <div>{this.state.searchPenguin}</div>
-        <div>{this.state.searchPig}</div> */}
-        {/* <div>{this.state.searchRabbit}</div> */}
-        {/* <div>{this.state.searchRhino}</div> */}
-        {/* <div>{this.state.searchSquirrel}</div> */}
-        {/* <div>{this.state.searchTiger}</div> */}
-        {/* <div>{this.state.searchWolf}</div>  */}
+        </div>
+        <div className={`${isAlligatorSearchVisible ? "" : "hidden"}`}>
+          <div className="alligator">
+            <h2>Alligator</h2>
+            <div>{this.state.searchAlligator}</div>
+          </div>
+        </div>
+        <div className={`${isAnteaterSearchVisible ? "" : "hidden"}`}>
+          <div className="anteater">
+            <h2>Anteater</h2>
+            <div>{this.state.searchAnteater}</div>
+          </div>
+        </div>
+        <div className={`${isBearSearchVisible ? "" : "hidden"}`}>
+          <div className="bear">
+            <h2>Bear</h2>
+            <div>{this.state.searchBear}</div>
+          </div>
+        </div>
+        <div className={`${isBirdSearchVisible ? "" : "hidden"}`}>
+          <div className="bird">
+            <h2>Bird</h2>
+            <div>{this.state.searchBird}</div>
+          </div>
+        </div>
+        <div className={`${isBullSearchVisible ? "" : "hidden"}`}>
+          <div className="bull">
+            <h2>Bull</h2>
+            <div>{this.state.searchBull}</div>
+          </div>
+        </div>
+        <div className={`${isCatSearchVisible ? "" : "hidden"}`}>
+          <div className="cat">
+            <h2>Cat</h2>
+            <div>{this.state.searchCat}</div>
+          </div>
+        </div>
+        <div className={`${isChickenSearchVisible ? "" : "hidden"}`}>
+          <div className="chicken">
+            <h2>Chicken</h2>
+            <div>{this.state.searchChicken}</div>
+          </div>
+        </div>
+        <div className={`${isCowSearchVisible ? "" : "hidden"}`}>
+          <div className="cow">
+            <h2>Cow</h2>
+            <div>{this.state.searchCow}</div>
+          </div>
+        </div>
+        <div className={`${isCubSearchVisible ? "" : "hidden"}`}>
+          <div className="cub">
+            <h2>Cub</h2>
+            <div>{this.state.searchCub}</div>
+          </div>
+        </div>
+        <div className={`${isDeerSearchVisible ? "" : "hidden"}`}>
+          <div className="deer">
+            <h2>Deer</h2>
+            <div>{this.state.searchDeer}</div>
+          </div>
+        </div>
+        <div className={`${isDogSearchVisible ? "" : "hidden"}`}>
+          <div className="dog">
+            <h2>Dog</h2>
+            <div>{this.state.searchDog}</div>
+          </div>
+        </div>
+        <div className={`${isDuckSearchVisible ? "" : "hidden"}`}>
+          <div className="duck">
+            <h2>Duck</h2>
+            <div>{this.state.searchDuck}</div>
+          </div>
+        </div>
+        <div className={`${isEagleSearchVisible ? "" : "hidden"}`}>
+          <div className="eagle">
+            <h2>Eagle</h2>
+            <div>{this.state.searchEagle}</div>
+          </div>
+        </div>
+        <div className={`${isElephantSearchVisible ? "" : "hidden"}`}>
+          <div className="elephant">
+            <h2>Elephant</h2>
+            <div>{this.state.searchElephant}</div>
+          </div>
+        </div>
+        <div className={`${isFrogSearchVisible ? "" : "hidden"}`}>
+          <div className="frog">
+            <h2>Frog</h2>
+            <div>{this.state.searchFrog}</div>
+          </div>
+        </div>
+        <div className={`${isGoatSearchVisible ? "" : "hidden"}`}>
+          <div className="goat">
+            <h2>Goat</h2>
+            <div>{this.state.searchGoat}</div>
+          </div>
+        </div>
+        <div className={`${isGorillaSearchVisible ? "" : "hidden"}`}>
+          <div className="gorilla">
+            <h2>Gorilla</h2>
+            <div>{this.state.searchGorilla}</div>
+          </div>
+        </div>
+        <div className={`${isHamsterSearchVisible ? "" : "hidden"}`}>
+          <div className="hamster">
+            <h2>Hamster</h2>
+            <div>{this.state.searchHamster}</div>
+          </div>
+        </div>
+        <div className={`${isHippoSearchVisible ? "" : "hidden"}`}>
+          <div className="hippo">
+            <h2>Hippo</h2>
+            <div>{this.state.searchHippo}</div>
+          </div>
+        </div>
+        <div className={`${isHorseSearchVisible ? "" : "hidden"}`}>
+          <div className="horse">
+            <h2>Horse</h2>
+            <div>{this.state.searchHorse}</div>
+          </div>
+        </div>
+        <div className={`${isKangarooSearchVisible ? "" : "hidden"}`}>
+          <div className="kangaroo">
+            <h2>Kangaroo</h2>
+            <div>{this.state.searchKangaroo}</div>
+          </div>
+        </div>
+        <div className={`${isKoalaSearchVisible ? "" : "hidden"}`}>
+          <div className="koala">
+            <h2>Koala</h2>
+            <div>{this.state.searchKoala}</div>
+          </div>
+        </div>
+        <div className={`${isLionSearchVisible ? "" : "hidden"}`}>
+          <div className="lion">
+            <h2>Lion</h2>
+            <div>{this.state.searchLion}</div>
+          </div>
+        </div>
+        <div className={`${isMonkeySearchVisible ? "" : "hidden"}`}>
+          <div className="gorilla">
+            <h2>Monkey</h2>
+            <div>{this.state.searchMonkey}</div>
+          </div>
+        </div>
+        <div className={`${isMouseSearchVisible ? "" : "hidden"}`}>
+          <div className="mouse">
+            <h2>Mouse</h2>
+            <div>{this.state.searchMouse}</div>
+          </div>
+        </div>
+        <div className={`${isOctopusSearchVisible ? "" : "hidden"}`}>
+          <div className="octopus">
+            <h2>Octopus</h2>
+            <div>{this.state.searchOctopus}</div>
+          </div>
+        </div>
+        <div className={`${isOstrichSearchVisible ? "" : "hidden"}`}>
+          <div className="ostrich">
+            <h2>Ostrich</h2>
+            <div>{this.state.searchOstrich}</div>
+          </div>
+        </div>
+        <div className={`${isPenguinSearchVisible ? "" : "hidden"}`}>
+          <div className="penguin">
+            <h2>Penguin</h2>
+            <div>{this.state.searchPenguin}</div>
+          </div>
+        </div>
+        <div className={`${isPigSearchVisible ? "" : "hidden"}`}>
+          <div className="pig">
+            <h2>Pig</h2>
+            <div>{this.state.searchPig}</div>
+          </div>
+        </div>
+        <div className={`${isRabbitSearchVisible ? "" : "hidden"}`}>
+          <div className="rabbit">
+            <h2>Rabbit</h2>
+            <div>{this.state.searchRabbit}</div>
+          </div>
+        </div>
+        <div className={`${isRhinoSearchVisible ? "" : "hidden"}`}>
+          <div className="rhino">
+            <h2>Rhino</h2>
+            <div>{this.state.searchRhino}</div>
+          </div>
+        </div>
+        <div className={`${isSheepSearchVisible ? "" : "hidden"}`}>
+          <div className="sheep">
+            <h2>Sheep</h2>
+            <div>{this.state.searchSheep}</div>
+          </div>
+        </div>
+        <div className={`${isSquirrelSearchVisible ? "" : "hidden"}`}>
+          <div className="squirrel">
+            <h2>Squirrel</h2>
+            <div>{this.state.searchSquirrel}</div>
+          </div>
+        </div>
+        <div className={`${isTigerSearchVisible ? "" : "hidden"}`}>
+          <div className="tiger">
+            <h2>Tiger</h2>
+            <div>{this.state.searchTiger}</div>
+          </div>
+        </div>
+        <div className={`${isWolfSearchVisible ? "" : "hidden"}`}>
+          <div className="wolf">
+            <h2>Wolf</h2>
+            <div>{this.state.searchWolf}</div>
+          </div>
+        </div>
       </div>
     );
   }
