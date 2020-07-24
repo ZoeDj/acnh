@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import API from "../utils/API";
-import { FaThumbsUp, FaThumbsDown } from "react-icons/fa";
+import {
+  FaThumbsUp,
+  FaThumbsDown,
+  FaArrowAltCircleLeft,
+  FaArrowAltCircleRight,
+} from "react-icons/fa";
 
 class Discover extends Component {
   state = {
@@ -36,13 +41,10 @@ class Discover extends Component {
       <div>
         <h1>Make New Friends</h1>
         <h3>Thumbs up on any villager you'd like to meet!</h3>
+        <div className="arrow">
+          <FaArrowAltCircleLeft /> <FaArrowAltCircleRight />
+        </div>
         <img src={this.state.image} alt="villager" />
-        <h4>Name: {this.state.name}</h4>
-        <h4>Gender: {this.state.gender}</h4>
-        <h4>Species: {this.state.species}</h4>
-        <h4>Birthday: {this.state.birthday}</h4>
-        <h4>Personality: {this.state.personality}</h4>
-        <h4>Catch Phrase: "{this.state.catchPhrase}"</h4>
         <div>
           <button className="btn-up">
             <FaThumbsUp />
@@ -51,6 +53,12 @@ class Discover extends Component {
             <FaThumbsDown />
           </button>
         </div>
+        <h4>Name: {this.state.name}</h4>
+        <h4>Gender: {this.state.gender}</h4>
+        <h4>Species: {this.state.species}</h4>
+        <h4>Birthday: {this.state.birthday}</h4>
+        <h4>Personality: {this.state.personality}</h4>
+        <h4>Catch Phrase: "{this.state.catchPhrase}"</h4>
       </div>
     );
   }

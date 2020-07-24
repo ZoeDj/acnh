@@ -33,6 +33,19 @@ a {
   color: white;
   text-transform: uppercase;
 }
+.btn-up {
+  background-color: #f8eebc;
+  border: none;
+  border-radius: 10px;
+  padding-right: 20px;
+  padding-top: 30px;
+}
+.btn-down {
+  background-color: #f8eebc;
+  border: none;
+  padding-left: 20px;
+  padding-top: 30px;
+}
 
 svg {
   height: 2em;
@@ -43,6 +56,11 @@ svg {
 }
 .btn-down svg {
   fill: red;
+  border: none;
+}
+.arrow {
+  color: #45a590;
+  padding: 20px;
 }
 
 .footer {
@@ -63,8 +81,27 @@ svg {
 }
 .displayCard img {
   border-radius: 10%;
-  max-height: 150px;
+  max-height: 130px;
 }
 .hidden {
   display: none;
+}
+.primary-button {
+  padding: 10px;
+  background-color: white;
+  border: thin;
+  color: #45a590;
+}
+.gender {
+  width: 50%;
+}
+.animal {
+  display: block;
+  width: 15%;
+}
+.display {
+  width: 75%;
+  position: absolute;
+  top: 15%;
+  left: 20%;
 }

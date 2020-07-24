@@ -653,482 +653,483 @@ class Search extends Component {
       <div>
         <button
           type="button"
-          className="primary-button female"
+          className="primary-button gender"
           onClick={this.toggleFemaleSearch}
         >
           Female
         </button>
         <button
           type="button"
-          className="primary-button male"
+          className="primary-button gender"
           onClick={this.toggleMaleSearch}
         >
           Male
         </button>
+
         <button
           type="button"
-          className="primary-button alligator"
+          className="primary-button animal"
           onClick={this.toggleAlligatorSearch}
         >
           Alligator
         </button>
         <button
           type="button"
-          className="primary-button anteater"
+          className="primary-button animal"
           onClick={this.toggleAnteaterSearch}
         >
           Anteater
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleBearSearch}
         >
           Bear
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleBirdSearch}
         >
           Bird
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleBullSearch}
         >
           Bull
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleCatSearch}
         >
           Cat
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleChickenSearch}
         >
           Chicken
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleCowSearch}
         >
           Cow
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleCubSearch}
         >
           Cub
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleDeerSearch}
         >
           Deer
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleDogSearch}
         >
           Dog
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleDuckSearch}
         >
           Duck
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleEagleSearch}
         >
           Eagle
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleElephantSearch}
         >
           Elephant
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleFrogSearch}
         >
           Frog
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleGoatSearch}
         >
           Goat
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleGorillaSearch}
         >
           Gorilla
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleHamsterSearch}
         >
           Hamster
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleHippoSearch}
         >
           Hippo
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleHorseSearch}
         >
           Horse
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleKangarooSearch}
         >
           Kangaroo
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleKoalaSearch}
         >
           Koala
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleLionSearch}
         >
           Lion
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleMonkeySearch}
         >
           Monkey
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleMouseSearch}
         >
           Mouse
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleOctopusSearch}
         >
           Octopus
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleOstrichSearch}
         >
           Ostrich
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.togglePenguinSearch}
         >
           Penguin
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.togglePigSearch}
         >
           Pig
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleRabbitSearch}
         >
           Rabbit
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleRhinoSearch}
         >
           Rhino
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleSheepSearch}
         >
           Sheep
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleSquirrelSearch}
         >
           Squirrel
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleTigerSearch}
         >
           Tiger
         </button>
         <button
           type="button"
-          className="primary-button"
+          className="primary-button animal"
           onClick={this.toggleWolfSearch}
         >
           Wolf
         </button>
 
         <div className={`${isFemaleSearchVisible ? "" : "hidden"}`}>
-          <div className="female">
+          <div className="display female">
             <h2>Female</h2>
             <div>{this.state.searchFemale}</div>
           </div>
         </div>
         <div className={` ${isMaleSearchVisible ? "" : "hidden"}`}>
-          <div className="male">
+          <div className="display male">
             <h2>Male</h2>
             <div>{this.state.searchMale}</div>
           </div>
         </div>
         <div className={`${isAlligatorSearchVisible ? "" : "hidden"}`}>
-          <div className="alligator">
+          <div className="display alligator">
             <h2>Alligator</h2>
             <div>{this.state.searchAlligator}</div>
           </div>
         </div>
         <div className={`${isAnteaterSearchVisible ? "" : "hidden"}`}>
-          <div className="anteater">
+          <div className="display anteater">
             <h2>Anteater</h2>
             <div>{this.state.searchAnteater}</div>
           </div>
         </div>
         <div className={`${isBearSearchVisible ? "" : "hidden"}`}>
-          <div className="bear">
+          <div className="display bear">
             <h2>Bear</h2>
             <div>{this.state.searchBear}</div>
           </div>
         </div>
         <div className={`${isBirdSearchVisible ? "" : "hidden"}`}>
-          <div className="bird">
+          <div className="display bird">
             <h2>Bird</h2>
             <div>{this.state.searchBird}</div>
           </div>
         </div>
         <div className={`${isBullSearchVisible ? "" : "hidden"}`}>
-          <div className="bull">
+          <div className="display bull">
             <h2>Bull</h2>
             <div>{this.state.searchBull}</div>
           </div>
         </div>
         <div className={`${isCatSearchVisible ? "" : "hidden"}`}>
-          <div className="cat">
+          <div className="display cat">
             <h2>Cat</h2>
             <div>{this.state.searchCat}</div>
           </div>
         </div>
         <div className={`${isChickenSearchVisible ? "" : "hidden"}`}>
-          <div className="chicken">
+          <div className="display chicken">
             <h2>Chicken</h2>
             <div>{this.state.searchChicken}</div>
           </div>
         </div>
         <div className={`${isCowSearchVisible ? "" : "hidden"}`}>
-          <div className="cow">
+          <div className="display cow">
             <h2>Cow</h2>
             <div>{this.state.searchCow}</div>
           </div>
         </div>
         <div className={`${isCubSearchVisible ? "" : "hidden"}`}>
-          <div className="cub">
+          <div className="display cub">
             <h2>Cub</h2>
             <div>{this.state.searchCub}</div>
           </div>
         </div>
         <div className={`${isDeerSearchVisible ? "" : "hidden"}`}>
-          <div className="deer">
+          <div className="display deer">
             <h2>Deer</h2>
             <div>{this.state.searchDeer}</div>
           </div>
         </div>
         <div className={`${isDogSearchVisible ? "" : "hidden"}`}>
-          <div className="dog">
+          <div className="display dog">
             <h2>Dog</h2>
             <div>{this.state.searchDog}</div>
           </div>
         </div>
         <div className={`${isDuckSearchVisible ? "" : "hidden"}`}>
-          <div className="duck">
+          <div className="display duck">
             <h2>Duck</h2>
             <div>{this.state.searchDuck}</div>
           </div>
         </div>
         <div className={`${isEagleSearchVisible ? "" : "hidden"}`}>
-          <div className="eagle">
+          <div className="display eagle">
             <h2>Eagle</h2>
             <div>{this.state.searchEagle}</div>
           </div>
         </div>
         <div className={`${isElephantSearchVisible ? "" : "hidden"}`}>
-          <div className="elephant">
+          <div className="display elephant">
             <h2>Elephant</h2>
             <div>{this.state.searchElephant}</div>
           </div>
         </div>
         <div className={`${isFrogSearchVisible ? "" : "hidden"}`}>
-          <div className="frog">
+          <div className="display frog">
             <h2>Frog</h2>
             <div>{this.state.searchFrog}</div>
           </div>
         </div>
         <div className={`${isGoatSearchVisible ? "" : "hidden"}`}>
-          <div className="goat">
+          <div className="display goat">
             <h2>Goat</h2>
             <div>{this.state.searchGoat}</div>
           </div>
         </div>
         <div className={`${isGorillaSearchVisible ? "" : "hidden"}`}>
-          <div className="gorilla">
+          <div className="display gorilla">
             <h2>Gorilla</h2>
             <div>{this.state.searchGorilla}</div>
           </div>
         </div>
         <div className={`${isHamsterSearchVisible ? "" : "hidden"}`}>
-          <div className="hamster">
+          <div className="display hamster">
             <h2>Hamster</h2>
             <div>{this.state.searchHamster}</div>
           </div>
         </div>
         <div className={`${isHippoSearchVisible ? "" : "hidden"}`}>
-          <div className="hippo">
+          <div className="display hippo">
             <h2>Hippo</h2>
             <div>{this.state.searchHippo}</div>
           </div>
         </div>
         <div className={`${isHorseSearchVisible ? "" : "hidden"}`}>
-          <div className="horse">
+          <div className="display horse">
             <h2>Horse</h2>
             <div>{this.state.searchHorse}</div>
           </div>
         </div>
         <div className={`${isKangarooSearchVisible ? "" : "hidden"}`}>
-          <div className="kangaroo">
+          <div className="display kangaroo">
             <h2>Kangaroo</h2>
             <div>{this.state.searchKangaroo}</div>
           </div>
         </div>
         <div className={`${isKoalaSearchVisible ? "" : "hidden"}`}>
-          <div className="koala">
+          <div className="display koala">
             <h2>Koala</h2>
             <div>{this.state.searchKoala}</div>
           </div>
         </div>
         <div className={`${isLionSearchVisible ? "" : "hidden"}`}>
-          <div className="lion">
+          <div className="display lion">
             <h2>Lion</h2>
             <div>{this.state.searchLion}</div>
           </div>
         </div>
         <div className={`${isMonkeySearchVisible ? "" : "hidden"}`}>
-          <div className="gorilla">
+          <div className="display gorilla">
             <h2>Monkey</h2>
             <div>{this.state.searchMonkey}</div>
           </div>
         </div>
         <div className={`${isMouseSearchVisible ? "" : "hidden"}`}>
-          <div className="mouse">
+          <div className="display mouse">
             <h2>Mouse</h2>
             <div>{this.state.searchMouse}</div>
           </div>
         </div>
         <div className={`${isOctopusSearchVisible ? "" : "hidden"}`}>
-          <div className="octopus">
+          <div className="display octopus">
             <h2>Octopus</h2>
             <div>{this.state.searchOctopus}</div>
           </div>
         </div>
         <div className={`${isOstrichSearchVisible ? "" : "hidden"}`}>
-          <div className="ostrich">
+          <div className="display ostrich">
             <h2>Ostrich</h2>
             <div>{this.state.searchOstrich}</div>
           </div>
         </div>
         <div className={`${isPenguinSearchVisible ? "" : "hidden"}`}>
-          <div className="penguin">
+          <div className="display penguin">
             <h2>Penguin</h2>
             <div>{this.state.searchPenguin}</div>
           </div>
         </div>
         <div className={`${isPigSearchVisible ? "" : "hidden"}`}>
-          <div className="pig">
+          <div className="display pig">
             <h2>Pig</h2>
             <div>{this.state.searchPig}</div>
           </div>
         </div>
         <div className={`${isRabbitSearchVisible ? "" : "hidden"}`}>
-          <div className="rabbit">
+          <div className="display rabbit">
             <h2>Rabbit</h2>
             <div>{this.state.searchRabbit}</div>
           </div>
         </div>
         <div className={`${isRhinoSearchVisible ? "" : "hidden"}`}>
-          <div className="rhino">
+          <div className="display rhino">
             <h2>Rhino</h2>
             <div>{this.state.searchRhino}</div>
           </div>
         </div>
         <div className={`${isSheepSearchVisible ? "" : "hidden"}`}>
-          <div className="sheep">
+          <div className="display sheep">
             <h2>Sheep</h2>
             <div>{this.state.searchSheep}</div>
           </div>
         </div>
         <div className={`${isSquirrelSearchVisible ? "" : "hidden"}`}>
-          <div className="squirrel">
+          <div className="display squirrel">
             <h2>Squirrel</h2>
             <div>{this.state.searchSquirrel}</div>
           </div>
         </div>
         <div className={`${isTigerSearchVisible ? "" : "hidden"}`}>
-          <div className="tiger">
+          <div className="display tiger">
             <h2>Tiger</h2>
             <div>{this.state.searchTiger}</div>
           </div>
         </div>
         <div className={`${isWolfSearchVisible ? "" : "hidden"}`}>
-          <div className="wolf">
+          <div className="display wolf">
             <h2>Wolf</h2>
             <div>{this.state.searchWolf}</div>
           </div>
