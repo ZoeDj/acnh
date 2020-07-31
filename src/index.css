@@ -102,12 +102,69 @@ button {
 }
 .display {
   width: 75%;
+  height: 100%;
   position: absolute;
   top: 15%;
   left: 20%;
   background-color: #f0fff5;
 }
 
-.active {
-  background: #ef8340;
+.active,
+.active11,
+.active21,
+.active31 {
+  background: #f5b7b1;
+}
+.active1,
+.active12,
+.active22,
+.active32 {
+  background: #a9cce3;
+}
+.active2,
+.active23,
+.active33 {
+  background: #d7bde2;
+}
+.active3,
+.active13,
+.active24,
+.active34 {
+  background: #7993ee;
+}
+.active4,
+.active14,
+.active25,
+.active35 {
+  background: #fad7a0;
+}
+.active5,
+.active15,
+.active26,
+.active36 {
+  background: #f1948a;
+}
+.active6,
+.active16,
+.active27 {
+  background: #c39bd3;
+}
+.active7,
+.active17,
+.active28 {
+  background: #85c1e9;
+}
+.active8,
+.active18,
+.active29 {
+  background: #f8c471;
+}
+.active9,
+.active19,
+.active30 {
+  background: #f5bae4;
+}
+.active10,
+.active20 {
+  background: #60addf;
 }

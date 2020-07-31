@@ -41,9 +41,15 @@ class Discover extends Component {
       <div>
         <h1>Make New Friends</h1>
         <h3>Thumbs up on any villager you'd like to meet!</h3>
-        <div className="arrow">
+        <div
+          className="arrow"
+          onClick={() => {
+            this.randomVillager();
+          }}
+        >
           <FaArrowAltCircleLeft /> <FaArrowAltCircleRight />
         </div>
+
         <img src={this.state.image} alt="villager" />
         <div>
           <button className="btn-up">

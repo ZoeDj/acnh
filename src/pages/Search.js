@@ -41,6 +41,43 @@ class Search extends Component {
     searchTiger: "",
     searchWolf: "",
     active: false,
+    active1: false,
+    active2: false,
+    active3: false,
+    active4: false,
+    active5: false,
+    active6: false,
+    active7: false,
+    active8: false,
+    active9: false,
+    active10: false,
+    active11: false,
+    active12: false,
+    active13: false,
+    active14: false,
+    active15: false,
+    active16: false,
+    active17: false,
+    active18: false,
+    active19: false,
+    active20: false,
+    active21: false,
+    active22: false,
+    active23: false,
+    active24: false,
+    active25: false,
+    active26: false,
+    active27: false,
+    active28: false,
+    active29: false,
+    active30: false,
+    active31: false,
+    active32: false,
+    active33: false,
+    active34: false,
+    active35: false,
+    active36: false,
+    active37: false,
   };
 
   componentDidMount() {
@@ -655,7 +692,7 @@ class Search extends Component {
       <div>
         <button
           type="button"
-          className={this.state.active ? "active" : null}
+          className={this.state.active ? "active" : ""}
           onClick={() => {
             this.toggleFemaleSearch();
             this.setState({ active: !this.state.active });
@@ -663,255 +700,364 @@ class Search extends Component {
         >
           Female
         </button>
+
         <button
           type="button"
-          className="primary-button gender"
-          onClick={this.toggleMaleSearch}
+          className={this.state.active1 ? "active1" : ""}
+          onClick={() => {
+            this.toggleMaleSearch();
+            this.setState({ active1: !this.state.active1 });
+          }}
         >
           Male
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleAlligatorSearch}
+          className={this.state.active2 ? "active2 animal" : "animal"}
+          onClick={() => {
+            this.toggleAlligatorSearch();
+            this.setState({ active2: !this.state.active2 });
+          }}
         >
           Alligator
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleAnteaterSearch}
+          className={this.state.active3 ? "active3 animal" : "animal"}
+          onClick={() => {
+            this.toggleAnteaterSearch();
+            this.setState({ active3: !this.state.active3 });
+          }}
         >
           Anteater
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleBearSearch}
+          className={this.state.active4 ? "active4 animal" : "animal"}
+          onClick={() => {
+            this.toggleBearSearch();
+            this.setState({ active4: !this.state.active4 });
+          }}
         >
           Bear
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleBirdSearch}
+          className={this.state.active5 ? "active5 animal" : "animal"}
+          onClick={() => {
+            this.toggleBirdSearch();
+            this.setState({ active5: !this.state.active5 });
+          }}
         >
           Bird
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleBullSearch}
+          className={this.state.active6 ? "active6 animal" : "animal"}
+          onClick={() => {
+            this.toggleBullSearch();
+            this.setState({ active6: !this.state.active6 });
+          }}
         >
           Bull
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleCatSearch}
+          className={this.state.active7 ? "active7 animal" : "animal"}
+          onClick={() => {
+            this.toggleCatSearch();
+            this.setState({ active7: !this.state.active7 });
+          }}
         >
           Cat
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleChickenSearch}
+          className={this.state.active8 ? "active8 animal" : "animal"}
+          onClick={() => {
+            this.toggleChickenSearch();
+            this.setState({ active8: !this.state.active8 });
+          }}
         >
           Chicken
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleCowSearch}
+          className={this.state.active9 ? "active9 animal" : "animal"}
+          onClick={() => {
+            this.toggleCowSearch();
+            this.setState({ active9: !this.state.active9 });
+          }}
         >
           Cow
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleCubSearch}
+          className={this.state.active10 ? "active10 animal" : "animal"}
+          onClick={() => {
+            this.toggleCubSearch();
+            this.setState({ active10: !this.state.active10 });
+          }}
         >
           Cub
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleDeerSearch}
+          className={this.state.active11 ? "active11 animal" : "animal"}
+          onClick={() => {
+            this.toggleDeerSearch();
+            this.setState({ active11: !this.state.active11 });
+          }}
         >
           Deer
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleDogSearch}
+          className={this.state.active12 ? "active12 animal" : "animal"}
+          onClick={() => {
+            this.toggleDogSearch();
+            this.setState({ active12: !this.state.active12 });
+          }}
         >
           Dog
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleDuckSearch}
+          className={this.state.active13 ? "active13 animal" : "animal"}
+          onClick={() => {
+            this.toggleDuckSearch();
+            this.setState({ active13: !this.state.active13 });
+          }}
         >
           Duck
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleEagleSearch}
+          className={this.state.active14 ? "active14 animal" : "animal"}
+          onClick={() => {
+            this.toggleEagleSearch();
+            this.setState({ active14: !this.state.active14 });
+          }}
         >
           Eagle
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleElephantSearch}
+          className={this.state.active15 ? "active15 animal" : "animal"}
+          onClick={() => {
+            this.toggleElephantSearch();
+            this.setState({ active15: !this.state.active15 });
+          }}
         >
           Elephant
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleFrogSearch}
+          className={this.state.active16 ? "active16 animal" : "animal"}
+          onClick={() => {
+            this.toggleFrogSearch();
+            this.setState({ active16: !this.state.active16 });
+          }}
         >
           Frog
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleGoatSearch}
+          className={this.state.active17 ? "active17 animal" : "animal"}
+          onClick={() => {
+            this.toggleGoatSearch();
+            this.setState({ active17: !this.state.active17 });
+          }}
         >
           Goat
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleGorillaSearch}
+          className={this.state.active18 ? "active18 animal" : "animal"}
+          onClick={() => {
+            this.toggleGorillaSearch();
+            this.setState({ active18: !this.state.active18 });
+          }}
         >
           Gorilla
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleHamsterSearch}
+          className={this.state.active19 ? "active19 animal" : "animal"}
+          onClick={() => {
+            this.toggleHamsterSearch();
+            this.setState({ active19: !this.state.active19 });
+          }}
         >
           Hamster
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleHippoSearch}
+          className={this.state.active20 ? "active20 animal" : "animal"}
+          onClick={() => {
+            this.toggleHippoSearch();
+            this.setState({ active20: !this.state.active20 });
+          }}
         >
           Hippo
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleHorseSearch}
+          className={this.state.active21 ? "active21 animal" : "animal"}
+          onClick={() => {
+            this.toggleHorseSearch();
+            this.setState({ active21: !this.state.active21 });
+          }}
         >
           Horse
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleKangarooSearch}
+          className={this.state.active22 ? "active22 animal" : "animal"}
+          onClick={() => {
+            this.toggleKangarooSearch();
+            this.setState({ active22: !this.state.active22 });
+          }}
         >
           Kangaroo
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleKoalaSearch}
+          className={this.state.active23 ? "active23 animal" : "animal"}
+          onClick={() => {
+            this.toggleKoalaSearch();
+            this.setState({ active23: !this.state.active23 });
+          }}
         >
           Koala
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleLionSearch}
+          className={this.state.active24 ? "active24 animal" : "animal"}
+          onClick={() => {
+            this.toggleLionSearch();
+            this.setState({ active24: !this.state.active24 });
+          }}
         >
           Lion
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleMonkeySearch}
+          className={this.state.active25 ? "active25 animal" : "animal"}
+          onClick={() => {
+            this.toggleMonkeySearch();
+            this.setState({ active25: !this.state.active25 });
+          }}
         >
           Monkey
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleMouseSearch}
+          className={this.state.active26 ? "active26 animal" : "animal"}
+          onClick={() => {
+            this.toggleMouseSearch();
+            this.setState({ active26: !this.state.active26 });
+          }}
         >
           Mouse
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleOctopusSearch}
+          className={this.state.active27 ? "active27 animal" : "animal"}
+          onClick={() => {
+            this.toggleOctopusSearch();
+            this.setState({ active27: !this.state.active27 });
+          }}
         >
           Octopus
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleOstrichSearch}
+          className={this.state.active28 ? "active28 animal" : "animal"}
+          onClick={() => {
+            this.toggleOstrichSearch();
+            this.setState({ active28: !this.state.active28 });
+          }}
         >
           Ostrich
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.togglePenguinSearch}
+          className={this.state.active29 ? "active29 animal" : "animal"}
+          onClick={() => {
+            this.togglePenguinSearch();
+            this.setState({ active29: !this.state.active29 });
+          }}
         >
           Penguin
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.togglePigSearch}
+          className={this.state.active30 ? "active30 animal" : "animal"}
+          onClick={() => {
+            this.togglePigSearch();
+            this.setState({ active30: !this.state.active30 });
+          }}
         >
           Pig
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleRabbitSearch}
+          className={this.state.active31 ? "active31 animal" : "animal"}
+          onClick={() => {
+            this.toggleRabbitSearch();
+            this.setState({ active31: !this.state.active31 });
+          }}
         >
           Rabbit
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleRhinoSearch}
+          className={this.state.active32 ? "active32 animal" : "animal"}
+          onClick={() => {
+            this.toggleRhinoSearch();
+            this.setState({ active32: !this.state.active32 });
+          }}
         >
           Rhino
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleSheepSearch}
+          className={this.state.active33 ? "active33 animal" : "animal"}
+          onClick={() => {
+            this.toggleSheepSearch();
+            this.setState({ active33: !this.state.active33 });
+          }}
         >
           Sheep
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleSquirrelSearch}
+          className={this.state.active34 ? "active34 animal" : "animal"}
+          onClick={() => {
+            this.toggleSquirrelSearch();
+            this.setState({ active34: !this.state.active34 });
+          }}
         >
           Squirrel
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleTigerSearch}
+          className={this.state.active35 ? "active35 animal" : "animal"}
+          onClick={() => {
+            this.toggleTigerSearch();
+            this.setState({ active35: !this.state.active35 });
+          }}
         >
           Tiger
         </button>
         <button
           type="button"
-          className="primary-button animal"
-          onClick={this.toggleWolfSearch}
+          className={this.state.active36 ? "active36 animal" : "animal"}
+          onClick={() => {
+            this.toggleWolfSearch();
+            this.setState({ active36: !this.state.active36 });
+          }}
         >
           Wolf
         </button>
@@ -1139,6 +1285,10 @@ class Search extends Component {
         </div>
       </div>
     );
+  }
+
+  newMethod() {
+    return "active";
   }
 }
 
