@@ -40,6 +40,7 @@ class Search extends Component {
     searchSquirrel: "",
     searchTiger: "",
     searchWolf: "",
+    active: false,
   };
 
   componentDidMount() {
@@ -649,12 +650,16 @@ class Search extends Component {
     const { isSquirrelSearchVisible } = this.state;
     const { isTigerSearchVisible } = this.state;
     const { isWolfSearchVisible } = this.state;
+
     return (
       <div>
         <button
           type="button"
-          className="primary-button gender"
-          onClick={this.toggleFemaleSearch}
+          className={this.state.active ? "active" : null}
+          onClick={() => {
+            this.toggleFemaleSearch();
+            this.setState({ active: !this.state.active });
+          }}
         >
           Female
         </button>
@@ -665,7 +670,6 @@ class Search extends Component {
         >
           Male
         </button>
-
         <button
           type="button"
           className="primary-button animal"
@@ -911,7 +915,6 @@ class Search extends Component {
         >
           Wolf
         </button>
-
         <div className={`${isFemaleSearchVisible ? "" : "hidden"}`}>
           <div className="display female">
             <h2>Female</h2>

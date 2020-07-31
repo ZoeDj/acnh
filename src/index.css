@@ -9,7 +9,7 @@ body {
 
 body {
   text-align: center;
-  background-color: #f8eebc;
+  background-color: #f0fff5;
 }
 h1,
 h3 {
@@ -34,14 +34,14 @@ a {
   text-transform: uppercase;
 }
 .btn-up {
-  background-color: #f8eebc;
+  background-color: #f0fff5;
   border: none;
   border-radius: 10px;
   padding-right: 20px;
   padding-top: 30px;
 }
 .btn-down {
-  background-color: #f8eebc;
+  background-color: #f0fff5;
   border: none;
   padding-left: 20px;
   padding-top: 30px;
@@ -68,7 +68,7 @@ svg {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #f8eebc;
+  background-color: #f0fff5;
   color: #45a590;
   text-align: center;
 }
@@ -84,13 +84,14 @@ svg {
   max-height: 130px;
 }
 .hidden {
-  display: none;
+  visibility: hidden;
 }
-.primary-button {
+button {
   padding: 10px;
-  background-color: white;
+  background-color: #87c9a1;
   border: thin;
-  color: #45a590;
+  color: #f0fff5;
+  width: 50%;
 }
 .gender {
   width: 50%;
@@ -104,4 +105,9 @@ svg {
   position: absolute;
   top: 15%;
   left: 20%;
+  background-color: #f0fff5;
+}
+
+.active {
+  background: #ef8340;
 }
