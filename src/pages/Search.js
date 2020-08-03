@@ -1286,10 +1286,6 @@ class Search extends Component {
       </div>
     );
   }
-
-  newMethod() {
-    return "active";
-  }
 }
 
 export default Search;
