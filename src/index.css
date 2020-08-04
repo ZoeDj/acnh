@@ -169,3 +169,16 @@ button {
 .active20 {
   background: #60addf;
 }
+
+@media screen and (max-width: 600px) {
+  .hero {
+    width: 100%;
+  }
+  .animal {
+    width: 20%;
+  }
+  .displayCard img {
+    border-radius: 10%;
+    max-height: 90px;
+  }
+}
