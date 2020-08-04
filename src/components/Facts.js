@@ -18,8 +18,20 @@ class Facts extends Component {
             return cur.birthday ===
               dateObj.getDate() + "/" + (dateObj.getMonth() + 1) ? (
               <div className="displayCard" key={cur.id}>
+                <h5 style={{ color: "#49a30e" }}>
+                  Today is {cur.name[`name-USen`]}'s Birthday
+                </h5>
                 <img src={cur.image_uri} alt="female villager"></img>
-                <p>{cur.name[`name-USen`]}</p>
+                <h2
+                  style={{
+                    color: "#fef498",
+                    background: "#f0756a",
+                    borderRadius: "7px",
+                    padding: "7px",
+                  }}
+                >
+                  Happy Birthday {cur.name[`name-USen`]}!
+                </h2>
               </div>
             ) : (
               ""
@@ -33,7 +45,6 @@ class Facts extends Component {
   render() {
     return (
       <div>
-        <h4>Say "Happy Birthday!" to </h4>
         <div>{this.state.birthdayPerson}</div>
       </div>
     );

@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import API from "../utils/API";
 import {
-  FaThumbsUp,
-  FaThumbsDown,
+  // FaThumbsUp,
+  // FaThumbsDown,
   FaArrowAltCircleLeft,
   FaArrowAltCircleRight,
 } from "react-icons/fa";
@@ -39,8 +39,8 @@ class Discover extends Component {
   render() {
     return (
       <div>
-        <h1>Make New Friends</h1>
-        <h3>Thumbs up on any villager you'd like to meet!</h3>
+        <h1>Discover New Friends</h1>
+        {/* <h3>Thumbs up on any villager you'd like to meet!</h3> */}
         <div
           className="arrow"
           onClick={() => {
@@ -51,14 +51,14 @@ class Discover extends Component {
         </div>
 
         <img src={this.state.image} alt="villager" />
-        <div>
+        {/* <div>
           <button className="btn-up">
             <FaThumbsUp />
           </button>
           <button className="btn-down">
             <FaThumbsDown />
           </button>
-        </div>
+        </div> */}
         <h4>Name: {this.state.name}</h4>
         <h4>Gender: {this.state.gender}</h4>
         <h4>Species: {this.state.species}</h4>
