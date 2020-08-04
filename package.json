@@ -1,5 +1,5 @@
 {
-  "homepage": ".",
+  "homepage": "https://zoedj.github.io/acnh/",
   "name": "acnh",
   "version": "0.1.0",
   "private": true,
@@ -18,7 +18,7 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "predeploy": "yarn start build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
