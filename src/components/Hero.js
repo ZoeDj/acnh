@@ -1,8 +1,8 @@
 import React from "react";
-import image from "../img.png";
+import image from "../acnh.jpg";
 
 function Hero(props) {
-  return <img src={image} alt="acnh" />;
+  return <img src={image} alt="animal crossing" />;
 }
 
 export default Hero;

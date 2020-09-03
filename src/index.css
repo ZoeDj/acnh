@@ -1,8 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Spectral:wght@300&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Spectral", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -14,6 +14,9 @@ body {
 h1,
 h3 {
   color: #45a590;
+}
+h4 {
+  color: #992d23;
 }
 .nav {
   background-color: #49a30d;
@@ -74,7 +77,6 @@ svg {
   text-align: center;
 }
 
-/* Search */
 .displayCard {
   display: inline-block;
   padding: 5px;
@@ -83,89 +85,4 @@ svg {
 .displayCard img {
   border-radius: 10%;
   max-height: 130px;
-}
-.hidden {
-  visibility: hidden;
-}
-button {
-  padding: 10px;
-  background-color: #87c9a1;
-  border: thin;
-  color: #f0fff5;
-  width: 50%;
-}
-.gender {
-  width: 50%;
-}
-.animal {
-  display: block;
-  width: 15%;
-}
-.display {
-  width: 75%;
-  height: 100%;
-  position: absolute;
-  top: 15%;
-  left: 20%;
-  background-color: #f0fff5;
-}
-
-.active,
-.active11,
-.active21,
-.active31 {
-  background: #f5b7b1;
-}
-.active1,
-.active12,
-.active22,
-.active32 {
-  background: #a9cce3;
-}
-.active2,
-.active23,
-.active33 {
-  background: #d7bde2;
-}
-.active3,
-.active13,
-.active24,
-.active34 {
-  background: #7993ee;
-}
-.active4,
-.active14,
-.active25,
-.active35 {
-  background: #fad7a0;
-}
-.active5,
-.active15,
-.active26,
-.active36 {
-  background: #f1948a;
-}
-.active6,
-.active16,
-.active27 {
-  background: #c39bd3;
-}
-.active7,
-.active17,
-.active28 {
-  background: #85c1e9;
-}
-.active8,
-.active18,
-.active29 {
-  background: #f8c471;
-}
-.active9,
-.active19,
-.active30 {
-  background: #f5bae4;
-}
-.active10,
-.active20 {
-  background: #60addf;
 }

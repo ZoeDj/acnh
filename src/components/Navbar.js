@@ -11,13 +11,7 @@ export default function Navbar(props) {
             <Link to="/">Animal Crossing</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
             <Link to="/discover">Discover</Link>
-          </li>
-          <li>
-            <Link to="/search">Search</Link>
           </li>
         </ul>
       </div>

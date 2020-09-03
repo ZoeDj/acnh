@@ -18,14 +18,12 @@ class Facts extends Component {
             return cur.birthday ===
               dateObj.getDate() + "/" + (dateObj.getMonth() + 1) ? (
               <div className="displayCard" key={cur.id}>
-                <h5 style={{ color: "#49a30e" }}>
-                  Today is {cur.name[`name-USen`]}'s Birthday
-                </h5>
-                <img src={cur.image_uri} alt="female villager"></img>
+                <h4>Today is {cur.name[`name-USen`]}'s Birthday</h4>
+                <img src={cur.image_uri} alt="villager"></img>
                 <h2
                   style={{
-                    color: "#fef498",
-                    background: "#f0756a",
+                    color: "#f0fff5",
+                    background: "#992d23",
                     borderRadius: "7px",
                     padding: "7px",
                   }}

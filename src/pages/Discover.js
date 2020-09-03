@@ -40,7 +40,6 @@ class Discover extends Component {
     return (
       <div>
         <h1>Discover New Friends</h1>
-        {/* <h3>Thumbs up on any villager you'd like to meet!</h3> */}
         <div
           className="arrow"
           onClick={() => {
@@ -50,15 +49,12 @@ class Discover extends Component {
           <FaArrowAltCircleLeft /> <FaArrowAltCircleRight />
         </div>
 
-        <img src={this.state.image} alt="villager" />
-        {/* <div>
-          <button className="btn-up">
-            <FaThumbsUp />
-          </button>
-          <button className="btn-down">
-            <FaThumbsDown />
-          </button>
-        </div> */}
+        <img
+          src={this.state.image}
+          alt="villager"
+          style={{ borderRadius: "15px" }}
+        />
+
         <h4>Name: {this.state.name}</h4>
         <h4>Gender: {this.state.gender}</h4>
         <h4>Species: {this.state.species}</h4>
