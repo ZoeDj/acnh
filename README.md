@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -67,3 +68,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 # acnh-mini
+=======
+# acnh
+:tangerine: For all ACNH fans, here is a cute app where you can discover more about villagers, for example, a daily birthday celebration, the random discovery of new villagers, and search by gender or type of the animal. I'll add more features in the future. 
+:frog: It was a fun way to use API (http://acnhapi.com/) and make the React app. 
+:balloon: Have fun: https://zoedj.github.io/acnh/
+>>>>>>> 879933e13035aeadd1bb4aadce7448dce56c7b17
