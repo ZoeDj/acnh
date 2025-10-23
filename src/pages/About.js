@@ -5,8 +5,8 @@ import Facts from "../components/Facts";
 function About() {
   return (
     <div>
-      <Facts />
       <Hero />
+      <Facts />
     </div>
   );
 }

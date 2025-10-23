@@ -1,52 +1,77 @@
-import React, { Component } from "react";
-import API from "../utils/API";
+import React from "react";
+import bday from "../bday.json";
 
-class Facts extends Component {
-  state = {
-    birthdayPerson: [],
-  };
-  componentDidMount() {
-    this.celebrateBirthday();
+class VillagerBirthdays extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      villagers: [],
+      birthdaysToday: [],
+      loading: true,
+    };
   }
 
-  celebrateBirthday = () => {
-    API.getRandomVillager()
-      .then((res) =>
-        this.setState({
-          birthdayPerson: Object.values(res.data).map(function (cur) {
-            let dateObj = new Date();
-            return cur.birthday ===
-              dateObj.getDate() + "/" + (dateObj.getMonth() + 1) ? (
-              <div className="displayCard" key={cur.id}>
-                <h4>Today is {cur.name[`name-USen`]}'s Birthday</h4>
-                <img src={cur.image_uri} alt="villager"></img>
-                <h2
-                  style={{
-                    color: "#f0fff5",
-                    background: "#992d23",
-                    borderRadius: "7px",
-                    padding: "7px",
-                  }}
-                >
-                  Happy Birthday {cur.name[`name-USen`]}!
-                </h2>
-              </div>
-            ) : (
-              ""
-            );
-          }),
-        })
-      )
-      .catch((err) => console.log(err));
-  };
+  componentDidMount() {
+    this.loadVillagers();
+  }
+
+  async loadVillagers() {
+    // get today's date
+    const today = new Date();
+    const month = today.toLocaleString("en-US", { month: "long" });
+    const day = today.getDate();
+
+    const villagersData = bday;
+    // Loop through and grab name and birthday
+    villagersData.forEach((villager) => {
+      const name = villager.name;
+      const birthday = villager.birthday;
+
+      console.log(`${name} — ${birthday}`);
+
+      const birthdaysToday = villagersData.filter(
+        (villager) =>
+          villager.birthday.includes(month) && villager.birthday.includes(day)
+      );
+      console.log(birthdaysToday);
+
+      this.setState({
+        villagers: bday,
+        birthdaysToday,
+        loading: false,
+      });
+    });
+  }
 
   render() {
-    return (
-      <div>
-        <div>{this.state.birthdayPerson}</div>
-      </div>
-    );
+    const { loading, birthdaysToday } = this.state;
+
+    if (loading) return <p>Loading villagers...</p>;
+    else {
+      return (
+        <div className="p-4">
+          <h2>
+            <span role="img" aria-label="accessible-emoji">
+              🎂
+            </span>{" "}
+            Villager Birthdays Today
+          </h2>
+
+          {birthdaysToday.length > 0 ? (
+            <ul>
+              {birthdaysToday.map((v) => (
+                <li key={v.name}>
+                  <strong>{v.name}</strong> — {v.birthday}
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p>No villager birthdays today.</p>
+          )}
+        </div>
+      );
+    }
   }
 }
 
-export default Facts;
+export default VillagerBirthdays;

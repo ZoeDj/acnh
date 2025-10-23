@@ -3,8 +3,9 @@ import API from "../utils/API";
 import {
   // FaThumbsUp,
   // FaThumbsDown,
-  FaArrowAltCircleLeft,
-  FaArrowAltCircleRight,
+  FaLeaf,
+  // FaArrowAltCircleRight,
+  // FaArrowAltCircleLeft
 } from "react-icons/fa";
 
 class Discover extends Component {
@@ -20,17 +21,19 @@ class Discover extends Component {
   }
 
   randomVillager = () => {
-    let random = [Math.floor(Math.random() * 390)];
-    API.getRandomVillager(random)
+    //let random = [Math.floor(Math.random() * 390)];
+
+    API.getRandomVillager()
+
       .then((res) =>
         this.setState({
-          name: Object.values(res.data)[random].name[`name-USen`],
-          image: Object.values(res.data)[random].image_uri,
-          birthday: Object.values(res.data)[random][`birthday-string`],
-          species: Object.values(res.data)[random].species,
-          gender: Object.values(res.data)[random].gender,
-          personality: Object.values(res.data)[random].personality,
-          catchPhrase: Object.values(res.data)[random][`catch-phrase`],
+          name: res.data.name["US-en"],
+          image: res.data.image,
+          birthday: res.data.birthday,
+          species: res.data.species,
+          gender: res.data.gender,
+          personality: res.data.personality,
+          catchPhrase: res.data.saying,
         })
       )
       .catch((err) => console.log(err));
@@ -46,21 +49,20 @@ class Discover extends Component {
             this.randomVillager();
           }}
         >
-          <FaArrowAltCircleLeft /> <FaArrowAltCircleRight />
+          <FaLeaf />
         </div>
 
-        <img
+        {/* <img
           src={this.state.image}
           alt="villager"
           style={{ borderRadius: "15px" }}
-        />
-
-        <h4>Name: {this.state.name}</h4>
-        <h4>Gender: {this.state.gender}</h4>
-        <h4>Species: {this.state.species}</h4>
-        <h4>Birthday: {this.state.birthday}</h4>
-        <h4>Personality: {this.state.personality}</h4>
-        <h4>Catch Phrase: "{this.state.catchPhrase}"</h4>
+        /> */}
+        <h2>Say Hello to {this.state.name}</h2>
+        <h3>Gender: {this.state.gender}</h3>
+        <h3>Species: {this.state.species}</h3>
+        <h3>Birthday: {this.state.birthday}</h3>
+        <h3>Personality: {this.state.personality}</h3>
+        <h3>Catch Phrase: "{this.state.catchPhrase}"</h3>
       </div>
     );
   }
