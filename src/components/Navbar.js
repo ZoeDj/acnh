@@ -8,10 +8,10 @@ export default function Navbar(props) {
       <div>
         <ul>
           <li>
-            <Link to="/">Animal Crossing</Link>
+            <Link to="/acnh">Animal Crossing</Link>
           </li>
           <li>
-            <Link to="/discover">Discover</Link>
+            <Link to="/acnh/discover">Discover</Link>
           </li>
         </ul>
       </div>
